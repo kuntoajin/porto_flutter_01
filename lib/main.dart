@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:porto_flutter_01/screen/home_screen.dart';
+import 'package:porto_flutter_01/screen/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
