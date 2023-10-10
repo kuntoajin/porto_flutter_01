@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porto_flutter_01/screen/home/home_screen.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -44,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    print('current height is ' + MediaQuery.of(context).size.height.toString());
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
