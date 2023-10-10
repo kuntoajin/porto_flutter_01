@@ -66,7 +66,7 @@ class _MyWidgetState extends State<TestWidget> {
       Column(
         children: [
           Container(
-              height: 320,
+              height: Dimensions.pageView,
               margin: EdgeInsets.only(top: 20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -86,6 +86,41 @@ class _MyWidgetState extends State<TestWidget> {
               activeSize: const Size(15.0, 8.0),
               activeShape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0)),
+            ),
+          )
+        ],
+      ),
+      Column(
+        children: [
+          Container(
+              margin: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 15),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                  'Popular',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                ),
+              )),
+          Container(
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      height: 90,
+                      width: 140,
+                      margin: EdgeInsets.only(left: 20),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: NetworkImage(
+                                  'https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/15071119/Gado-Gado-dan-Ketoprak-Mana-yang-Lebih-Rendah-Kalori.jpg'))),
+                    ),
+                    Text('Ketoprak'),
+                  ],
+                )
+              ],
             ),
           )
         ],
@@ -182,25 +217,26 @@ class _MyWidgetState extends State<TestWidget> {
                           children: [
                             Row(
                               children: [
-                                Icon(Icons.circle_sharp, color: Colors.orange),
+                                Icon(Icons.circle_sharp,
+                                    color: Colors.orange, size: 16),
                                 SizedBox(width: 5),
-                                Text('Normal')
+                                Text('Normal', style: TextStyle(fontSize: 11))
                               ],
                             ),
                             Row(
                               children: [
                                 Icon(Icons.location_on,
-                                    color: AppColors.mainColor),
+                                    color: AppColors.mainColor, size: 16),
                                 SizedBox(width: 5),
-                                Text('2km')
+                                Text('2km', style: TextStyle(fontSize: 11))
                               ],
                             ),
                             Row(
                               children: [
                                 Icon(Icons.access_time_rounded,
-                                    color: Colors.amber),
+                                    color: Colors.amber, size: 16),
                                 SizedBox(width: 5),
-                                Text('30 menit')
+                                Text('30 menit', style: TextStyle(fontSize: 11))
                               ],
                             )
                           ])
