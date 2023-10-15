@@ -104,22 +104,139 @@ class _MyWidgetState extends State<TestWidget> {
           Container(
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Container(
-                      height: 90,
-                      width: 140,
-                      margin: EdgeInsets.only(left: 20),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: NetworkImage(
-                                  'https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/15071119/Gado-Gado-dan-Ketoprak-Mana-yang-Lebih-Rendah-Kalori.jpg'))),
-                    ),
-                    Text('Ketoprak'),
-                  ],
-                )
+                Container(
+                    margin: EdgeInsets.only(bottom: 15),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 140,
+                          margin: EdgeInsets.only(left: 20),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage(
+                                      'https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/15071119/Gado-Gado-dan-Ketoprak-Mana-yang-Lebih-Rendah-Kalori.jpg'))),
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Ketoprak',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(fontSize: 20),
+                            ),
+                            Text(
+                              'test',
+                              textAlign: TextAlign.left,
+                            )
+                          ],
+                        )
+                      ],
+                    )),
+                Container(
+                    margin: EdgeInsets.only(bottom: 15),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 140,
+                          margin: EdgeInsets.only(left: 20),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage(
+                                      'https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/15071119/Gado-Gado-dan-Ketoprak-Mana-yang-Lebih-Rendah-Kalori.jpg'))),
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Ketoprak',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(fontSize: 20),
+                            ),
+                            Text(
+                              'test',
+                              textAlign: TextAlign.left,
+                            )
+                          ],
+                        )
+                      ],
+                    )),
+                Container(
+                    margin: EdgeInsets.only(bottom: 15),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 140,
+                          margin: EdgeInsets.only(left: 20),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage(
+                                      'https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/15071119/Gado-Gado-dan-Ketoprak-Mana-yang-Lebih-Rendah-Kalori.jpg'))),
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Ketoprak',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(fontSize: 20),
+                            ),
+                            Text(
+                              'test',
+                              textAlign: TextAlign.left,
+                            )
+                          ],
+                        )
+                      ],
+                    )),
+                Container(
+                    margin: EdgeInsets.only(bottom: 15),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 140,
+                          margin: EdgeInsets.only(left: 20),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage(
+                                      'https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/11/15071119/Gado-Gado-dan-Ketoprak-Mana-yang-Lebih-Rendah-Kalori.jpg'))),
+                        ),
+                        Column(
+                          children: <Widget>[
+                            SizedBox(
+                              width: double.infinity,
+                              height: double.infinity,
+                              child: Container(
+                                color: Colors.red,
+                                child: Text(
+                                  "Bubur",
+                                  textAlign: TextAlign.right,
+                                ),
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Container(
+                                child: Text(
+                                  "Bubur",
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    )),
               ],
             ),
           )
